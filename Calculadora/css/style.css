@@ -1,0 +1,331 @@
+.box{
+   
+    width: 350px;
+    height: 500px;
+    background-color: teal;
+    border-radius: 30px;
+    border:  2px solid black;
+}
+
+.retangulo{
+
+    width: 250px;
+    height: 90px;
+    background-color: rgb(79, 79, 92);
+    border-radius: 20px;
+    border:  2px solid black;
+
+    position: absolute;
+    top: 6%;
+    left: 3%;
+}
+
+#dpy{
+
+    position: absolute;
+    top: 10%;
+    left: 4%;
+}
+
+#um{
+
+    width: 50px;
+    height: 50px;
+    background-color: rgb(77, 199, 189);
+    border-radius: 100px;
+    border: 2px solid black;
+    text-align: center;
+    cursor: pointer;
+    
+    
+
+    position: absolute;
+    top: 25%;
+    left: 2%;
+}
+
+#um:hover{
+
+    background-color: rgb(30, 107, 90);
+}
+
+#dois{
+
+    width: 50px;
+    height: 50px;
+    background-color: rgb(77, 199, 189);
+    border-radius: 100px;
+    border: 2px solid black;
+    text-align: center;
+    cursor: pointer;
+
+    position: absolute;
+    top: 25%;
+    left: 6%;
+}
+
+#dois:hover{
+
+    background-color: rgb(30, 107, 90);
+}
+
+#tres{
+
+    width: 50px;
+    height: 50px;
+    background-color: rgb(77, 199, 189);
+    border-radius: 100px;
+    border: 2px solid black;
+    text-align: center;
+    cursor: pointer;
+
+    position: absolute;
+    top: 25%;
+    left: 10%;
+}
+
+#tres:hover{
+
+    background-color: rgb(30, 107, 90);
+}
+
+#quatro{
+
+    width: 50px;
+    height: 50px;
+    background-color: rgb(77, 199, 189);
+    border-radius: 100px;
+    border: 2px solid black;
+    text-align: center;
+    cursor: pointer;
+
+    position: absolute;
+    top: 31%;
+    left: 2%;
+}
+
+#quatro:hover{
+
+    background-color: rgb(30, 107, 90);
+}
+
+#cinco{
+
+    width: 50px;
+    height: 50px;
+    background-color: rgb(77, 199, 189);
+    border-radius: 100px;
+    border: 2px solid black;
+    text-align: center;
+    cursor: pointer;
+
+    position: absolute;
+    top: 31%;
+    left: 6%;
+}
+
+#cinco:hover{
+
+    background-color: rgb(30, 107, 90);
+}
+
+#seis{
+
+    width: 50px;
+    height: 50px;
+    background-color: rgb(77, 199, 189);
+    border-radius: 100px;
+    border: 2px solid black;
+    text-align: center;
+    cursor: pointer;
+
+    position: absolute;
+    top: 31%;
+    left: 10%;
+}
+
+#seis:hover{
+
+    background-color: rgb(30, 107, 90);
+}
+
+#sete{
+
+    width: 50px;
+    height: 50px;
+    background-color: rgb(77, 199, 189);
+    border-radius: 100px;
+    border: 2px solid black;
+    text-align: center;
+    cursor: pointer;
+
+    position: absolute;
+    top: 37%;
+    left: 2%;
+}
+
+#sete:hover{
+
+    background-color: rgb(30, 107, 90);
+}
+
+#oito {
+
+    width: 50px;
+    height: 50px;
+    background-color: rgb(77, 199, 189);
+    border-radius: 100px;
+    border: 2px solid black;
+    text-align: center;
+    cursor: pointer;
+
+    position: absolute;
+    top: 37%;
+    left: 6%;
+}
+
+#oito:hover{
+
+    background-color: rgb(30, 107, 90);
+}
+
+#nove{
+
+    width: 50px;
+    height: 50px;
+    background-color: rgb(77, 199, 189);
+    border-radius: 100px;
+    border: 2px solid black;
+    text-align: center;
+    cursor: pointer;
+
+    position: absolute;
+    top: 37%;
+    left: 10%;
+}
+
+#nove:hover{
+
+    background-color: rgb(30, 107, 90);
+}
+
+#zero{
+
+    width: 50px;
+    height: 50px;
+    background-color: rgb(77, 199, 189);
+    border-radius: 100px;
+    border: 2px solid black;
+    text-align: center;
+    cursor: pointer;
+
+    position: absolute;
+    top: 43%;
+    left: 6%;
+}
+
+#zero:hover{
+
+    background-color: rgb(30, 107, 90);
+}
+
+#CE{
+
+    width: 60px;
+    height: 50px;
+    background-color: rgb(196, 21, 21);
+    border-radius: 10px;
+    border: 2px solid black;
+    text-align: center;
+    cursor: pointer;
+
+    position: absolute;
+    top: 44%;
+    left: 2%;
+}
+
+#CE:hover{
+
+    background-color: rgb(30, 107, 90);
+}
+
+#mais{
+
+    width: 50px;
+    height: 50px;
+    background-color: rgb(196, 21, 21);
+    border-radius: 10px;
+    border: 2px solid black;
+    text-align: center;
+    cursor: pointer;
+
+    position: absolute;
+    top: 25%;
+    left: 15%;
+}
+
+#mais:hover{
+
+    background-color: rgb(30, 107, 90);
+}
+
+#menos{
+
+    width: 50px;
+    height: 50px;
+    background-color: rgb(196, 21, 21);
+    border-radius: 10px;
+    border: 2px solid black;
+    text-align: center;
+    cursor: pointer;
+
+    position: absolute;
+    top: 32%;
+    left: 15%;
+}
+
+#menos:hover{
+
+    background-color: rgb(30, 107, 90);
+}
+
+#mult{
+
+    width: 50px;
+    height: 50px;
+    background-color: rgb(196, 21, 21);
+    border-radius: 10px;
+    border: 2px solid black;
+    text-align: center;
+    cursor: pointer;
+
+    position: absolute;
+    top: 39%;
+    left: 15%;
+}
+
+#mult:hover{
+
+    background-color: rgb(30, 107, 90);
+}
+
+#resultado{
+
+    width: 80px;
+    height: 50px;
+    background-color: rgb(182, 71, 77);
+    border-radius: 10px;
+    border: 2px solid black;
+    text-align: center;
+    cursor: pointer;
+
+    position: absolute;
+    top: 46%;
+    left: 13%;
+}
+
+#resultado:hover{
+
+    background-color: rgb(30, 107, 90);
+}
+
