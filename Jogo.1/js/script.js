@@ -1,0 +1,89 @@
+let t4;
+var lmt=2;
+var pts=0;
+function criarJogo() {
+  clearInterval(t4);
+  lmt=lmt+1;
+  var y=0;
+  var z=[];
+  for(i=0;i<18;i++) {
+    var box=document.createElement("div");
+    box.setAttribute("id",i+1);
+    box.setAttribute("class","quadrado");
+    box.textContent=i+1;
+    
+    var x=Math.floor(Math.random()*18);
+    
+    box.addEventListener("click",erro);
+    function erro() {
+      x=17;
+      lmt=2;
+      pts=0;
+      document.getElementById("pta").textContent="Pontuação:";
+      alert("Quadrado errado");
+      dltJogo();
+    }
+    let cont=0;
+    let t3;
+    let t2;
+    let t1=setInterval(chngColor,1200);
+    function chngColor() {
+      var bx=document.getElementById(x+1);
+      bx.style.backgroundColor="red";
+      
+      z[cont]=x+1;
+      document.getElementById(z[0]).removeEventListener("click",erro);
+      
+      if(cont==lmt-1) {
+        var bx=document.getElementById(z[0]);
+        bx.addEventListener("click",function() {
+          bx.style.backgroundColor="red";
+          slctdBx(y);
+        });
+      }
+      t2=setInterval(origColor,600);
+    }
+    function slctdBx(y) {
+      y=y+1;
+      clearInterval(t3);
+      var clnBx=document.getElementById(z[y]);
+      clnBx.removeEventListener("click",erro);
+      clnBx.addEventListener("click",function() {
+        clnBx.style.backgroundColor="red";
+        if(z[y]==z[cont-1] && y==cont-1) {
+          clearInterval(t3);
+          t3=setInterval(rsltds,10);
+        }
+        else
+          slctdBx(y);
+      });
+    }
+    function origColor() {
+      var bx=document.getElementById(x+1);
+      bx.style.backgroundColor="rgb(134,148,148)";
+      clearInterval(t2);
+      cont=cont+1;
+      if(cont==lmt) {
+        clearInterval(t1);
+      }
+      else
+        x=Math.floor(Math.random()*18);
+    }
+    function rsltds() {
+      var spn=document.getElementById("pta");
+      spn.textContent="Pontuação:"+pts;
+      clearInterval(t3);
+      t3=setInterval(dltJogo,10);
+    }
+    function dltJogo() {
+      clearInterval(t3);
+      for(i=0;i<18;i++) {
+        document.getElementById(i+1).remove();
+        if(i==17)
+          t4=setInterval(criarJogo,200);
+      }
+    }
+    document.querySelector("#container").appendChild(box);
+  }
+  pts=pts+1;
+}
