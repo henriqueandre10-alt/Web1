@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jogo</title>
+  <link rel="stylesheet" href="CSS/style.css">
+</head>
+<body>
+  <p id="nome">Amnézia</p>
+  <div id="container">
+    <div id="config">
+      <button type="button" id="btn" onclick="criarJogo()">Começar</button>
+    </div>
+    <div id="jogo"></div>
+    <div id="saida">
+      <span id="vlt">Voltar</span>
+    </div>
+    <span id="pta">Pontuação:</span>
+    
+    <script src="JS/script.js"></script>
+  </div>
+</body>
