@@ -1,0 +1,121 @@
+body{
+    background-color: rgba(0, 0, 0, 0.5);
+}
+#cmc{
+    background-color: rgb(83, 77, 77);
+    width: 75%;
+    height: 50px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgb(59, 59, 59);
+    
+    position: absolute;
+    top: 30%;
+    left: 12%;
+}
+#nome{
+    font-size: 120px;
+    font-family: cursive;
+
+    position: absolute;
+    top: -10%;
+    left: 35%;
+}
+#container{
+    width: 75%;
+    height: 400px;
+    background-color: rgb(59, 59, 59);
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px black;
+    display: flex;
+    justify-content: flex;
+    align-items: center;
+    flex-flow: wrap;
+    position: absolute;
+    top: 37%;
+    left: 11%;
+}
+#pnt{
+    background-color: rgb(83, 77, 77);
+    width: 75%;
+    height: 50px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgb(59, 59, 59);
+    height: 50px;
+    border-radius: 10px;
+
+    position: absolute;
+    top: 81%;
+    left: 12%;
+}
+.quadrado{
+    width: 70px;
+    height: 70px;
+    margin: 20px;
+    padding: 5px;
+    border-radius: 10px;
+    background-color: rgb(134, 148, 148);
+    box-shadow: 0px 0px 10px rgb(59, 59, 59);
+    cursor: pointer;
+    text-align: center;
+    font-size: 25px;
+    font-family: cursive;
+}
+.quadrado:hover{
+    background-color: gray;
+    box-shadow: 0px 0px 10px black;
+}
+#mover{
+    position: absolute;
+    top: 3%;
+    left: 21%;
+}
+
+#vlt{
+    text-decoration: none;
+    color: black;
+    background-color: blue;
+    border-radius: 10px;
+    display: block;
+    width: 85px;
+    height: 40px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    background-color: rgb(94, 64, 64);
+    color:rgb(184, 183, 183);
+    box-shadow: 0px 0px 10px black;
+
+    position: absolute;
+    top: 90%;
+    left: 3%;
+}
+#vlt:hover{
+    box-shadow: 0 0 30px black;
+    color: red;
+}
+#botao{
+    background-color: darkslategrey;
+    color:rgb(184, 183, 183);
+    border-radius: 10px;
+    width: 100px;
+    height: 30px;
+    box-shadow: 0px 0px 5px black;
+    cursor: pointer;
+
+    position: absolute;
+    top: 25%;
+    left: 14%;
+}
+#botao:hover{
+    color: red;
+    box-shadow: 0 0 15px black;
+}
+#pta{
+    color:rgb(61, 53, 53);
+    font-size: 25px;
+    font-family: cursive;
+
+    position: absolute;
+    top: 85%;
+    left: 70%;
+}
