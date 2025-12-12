@@ -6,13 +6,13 @@ function criarJogo() {
   lmt=lmt+1;
   var y=0;
   var z=[];
-  for(i=0;i<18;i++) {
+  for(i=0;i<27;i++) {
     var box=document.createElement("div");
     box.setAttribute("id",i+1);
     box.setAttribute("class","quadrado");
     box.textContent=i+1;
     
-    var x=Math.floor(Math.random()*18);
+    var x=Math.floor(Math.random()*27);
     
     box.addEventListener("click",erro);
     function erro() {
@@ -77,7 +77,7 @@ function criarJogo() {
     }
     function dltJogo() {
       clearInterval(t3);
-      for(i=0;i<18;i++) {
+      for(i=0;i<27;i++) {
         document.getElementById(i+1).remove();
         if(i==17)
           t4=setInterval(criarJogo,200);
@@ -86,4 +86,5 @@ function criarJogo() {
     document.querySelector("#container").appendChild(box);
   }
   pts=pts+1;
+
 }
