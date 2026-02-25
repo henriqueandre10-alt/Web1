@@ -1,0 +1,42 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+#fil{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 25px;
+
+    position: relative;
+    top: -350px;
+    left: 120px;
+}
+#linha{
+    border: 1px solid black;
+    width: 0px;
+    height: 586px;
+
+    position: relative;
+    top: 200px;
+    left: 300px;
+}
+#buscar{
+    width: 300px;
+    height: 40px;
+    border-radius:50px;
+    
+
+    position: relative;
+    top: -530px;
+    left: 150px;
+}
+#rga{
+    position: relative;
+    top: -440px;
+    left: -250px;
+}
+#gra{
+    position: relative;
+    top: -440px;
+    left: -230px;
+}
