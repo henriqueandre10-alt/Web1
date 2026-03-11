@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+</head>
+<body>
+    <div id="container">
+        <header>
+            <input type="text" id="buscar" placeholder="Buscar">
+        </header>
+        <div id="col">
+            
+            <p id="linha"></p>
+            <p id="no">Especificações</p>
+
+            <span id="rga">Região</span> <select id="gra">
+    <option value="" disabled selected hidden>Opções</option>
+    <option value="Bloco 1">Bloco 1</option>
+    <option value="Bloco 2">Bloco 2</option>
+    <option value="Bloco 3">Bloco 3</option>
+    <option value="RA">RA</option>
+    <option value="Refeitorio acadêmico">Refeitorio acadêmico</option>
+    <option value="Quadra">Quadra</option>
+    </select>
+
+    <span id="cat">Categoria</span> <select id="in">
+        <option value="" disabled selected hidden>Opções</option>
+        <option value="Roupa">Roupa</option>
+        <option value="Garrafa">Garrafa</option>
+        <option value="Acessorios">Acessorios</option>
+        <option value="Eletronicos">Eletronicos</option>
+        <option value="Cartões">Cartões</option>
+        <option value="Livros">Livros</option>
+        <option value="Chave">Chave</option>
+    </select>
+
+    <span id="mr">Marca</span>
+    <input id="marca" type="text">
+
+    <p id="int" >Itens selecionados: <span id="rsto"></span></p>
+    
+        </div>
+        <footer>
+            <ul>
+                <li><i class="material-icons">search</i></li>
+                <li><i class="material-icons">add</i></li>
+                <li><i class="material-icons">person</i></li>
+                <li><i class="material-icons">info</i></li>
+            </ul>
+        </footer>
+    </div>
+
+    <script src="js/script.js" ></script>
+</body>
+</html>
