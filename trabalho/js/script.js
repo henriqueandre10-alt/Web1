@@ -1,19 +1,27 @@
 const select = document.getElementById('gra');
 const select2 = document.getElementById('in');
+const mrc = document.getElementById('marca');
+ 
 
 
 const rst = document.getElementById('rsto');
 
 
-select.addEventListener('change', () => {
-    rst.textContent = select.value;
-})
+function atualizar(){
+    const regiao = select.value;
+    const categoria = select2.value;
+    const mrrc = mrc.value;
 
-select2.addEventListener('change', () => {
-    rst.textContent = select2.value;
-})
 
-const mrc = document.getElementById('marca');
+    rst.textContent = `${regiao} - ${categoria} (${mrrc})`;
+}
+select.addEventListener('change', atualizar);
+select2.addEventListener('change', atualizar);
+
+
+
+
+
 
 mrc.addEventListener('keydown', function(event) {
     if (event.key === 'Enter'){
