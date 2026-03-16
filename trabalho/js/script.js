@@ -6,24 +6,7 @@ const mrc = document.getElementById('marca');
 
 const rst = document.getElementById('rsto');
 
-
-function atualizar(){
-    const regiao = select.value;
-    const categoria = select2.value;
-    const mrrc = mrc.value;
-
-
-    rst.textContent = `${regiao} - ${categoria} (${mrrc})`;
-}
-select.addEventListener('change', atualizar);
-select2.addEventListener('change', atualizar);
-
-
-
-
-
-
-mrc.addEventListener('keydown', function(event) {
+/*mrc.addEventListener('keydown', function(event) {
     if (event.key === 'Enter'){
         const envText = mrc.value;
 
@@ -31,4 +14,25 @@ mrc.addEventListener('keydown', function(event) {
 
         mrc.value = "";
     }
-})
+})*/
+
+
+function atualizar(){
+    const regiao = select.value;
+    const categoria = select2.value;
+    const mrrc = mrc.value;
+
+
+    rst.textContent = `${regiao} - ${categoria} - ${mrrc}`;
+}
+select.addEventListener('change', atualizar);
+select2.addEventListener('change', atualizar);
+mrc.addEventListener('input', atualizar);
+
+function click(){
+
+    //criar as divs
+var block = document.createElement("div");
+document.getElementById('box1').appendChild(block);
+
+}
